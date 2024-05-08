@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <script>
+            "use strict";
+            let punkte = 0;
+
+            let eingabe1 = prompt("Was ist das Ergebnis aus 14 + 9?");
+            if (eingabe1 == 23) {
+                punkte ++;
+            }
+            let eingabe2 = prompt("Was ist das Ergebnis aus 27 / 3?");
+            if (eingabe2 == 9) {
+                punkte++;
+            }
+            let eingabe3 = prompt("Was ist das Ergebnis aus 4 * 8?");
+            if (eingabe3 == 32) {
+                punkte++;
+            }
+            let eingabe4 = prompt("Was ist die Quadratwurzel aus 9?");
+            if (eingabe4 == 3) {
+                punkte++;
+            }
+            let eingabe5 = prompt("Was ist der Logarithmus von 8 zur Basis 2?");
+            if (eingabe5 == 3) {
+                punkte++;
+            }
+
+            switch (punkte) {
+                case 0:
+                case 1:
+                    alert ("Sie sollten am besten nochmals die Grundschule besuchen.");
+                    break;
+
+                case 2:
+                case 3:
+                            alert("Sie sollten Mathe-Nachhilfe nehmen.");
+                break;
+
+                case 4:
+                    alert("Fast alle Afugaben richtig gelöst.");
+                    break;
+                
+                case 5:
+                    alert("Herzlichen Glückwunsch! Maximale Punkte erreicht!");
+                    break;
+            }
+            </script>
+    </body>
+</html>

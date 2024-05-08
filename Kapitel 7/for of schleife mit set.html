@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            "use strict";
+
+            let meinSet = new Set();
+
+            meinSet.add("Baum");
+            meinSet.add("Blume");
+            meinSet.add("Haus");
+            meinSet.add("Wolke");
+            meinSet.add("Auto");
+
+            let eingabe = prompt("Geben Sie ein Wort ein.");
+
+            for (let wert of meinSet) {
+                if (wert == eingabe) {
+                    document.write("Das Wort ist im Set enthalten.");
+                }
+            }
+        </script>
+    </body>
+</html>

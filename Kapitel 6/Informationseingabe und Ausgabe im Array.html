@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+
+            let meinArray = [[],[],[]];
+            meinArray[0][0] = prompt("Vorname Person 1:");
+            meinArray[0][1] = prompt("Nachname Person 1:");
+            meinArray[0][2] = prompt("Alter Person 1:");
+
+            meinArray[1][0] = prompt("Vorname Person 2:");
+            meinArray[1][1] = prompt("Nachname Person 2:");
+            meinArray[1][2] = prompt("Alter Person 2:");
+
+            meinArray[2][0] = prompt("Vorname Person 3:");
+            meinArray[2][1] = prompt("Nachname Person 3:");
+            meinArray[2][2] = prompt("Alter Person 3:");
+
+            let pers = prompt("Die Daten werlcher Person sollen ausgegeben werden?") -1;
+            let inf = prompt("Welche Informationen möchten sie abrufen (Vorname: 0, Nachname: 1, Alter: 2)");
+
+            document.write(meinArray[pers][inf]);
+
+            </script>
+    </body>
+</html>
