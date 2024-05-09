@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <script>
+      "use strict";
+      function verdopplung(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] *= 2;
+        }
+        return arr;
+      }
+      let array = [3, 5, 7, 14];
+      array = verdopplung(array);
+      document.write("Doppelte Werte: " + array);
+    </script>
+  </body>
+</html>
