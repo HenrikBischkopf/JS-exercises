@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script>
+      "use script";
+      function Zug(wert) {
+        this.Feld += wert;
+      }
+
+      function Spieler(name, feld) {
+        this.Name = name;
+        this.Feld = feld;
+        this.Zug = Zug;
+      }
+
+      let Spieler1 = new Spieler("Katharina", 5);
+
+      Spieler1.Zug(3);
+
+      for (let i in Spieler1) {
+        document.write(i + ": " + Spieler1[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>
