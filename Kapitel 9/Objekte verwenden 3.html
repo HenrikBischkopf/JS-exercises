@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      "use strict";
+      class Spieler {
+        constructor(name, feld) {
+          this.Name = name;
+          this.Feld = feld;
+        }
+        Zug(wert) {
+          this.Feld += wert;
+        }
+      }
+      let Spieler1 = new Spieler("Katharina", 5);
+
+      Spieler1.Zug(3);
+
+      for (let i in Spieler1) {
+        document.write(i + ": " + Spieler1[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>
